@@ -3,8 +3,27 @@
   padding: 0;
 }
 
+.search {
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin: 0 auto;
+  width: fit-content;
+  border: 0.2em solid black;
+  border-radius: 5rem;
+}
+
+input {
+  background-color: transparent;
+  border: gray;
+}
+input:focus {
+  outline: none;
+}
 .card-container {
-  background-color:#252B48;
+  background-color: #252b48;
   width: 15rem;
   border: 1px solid lightgray;
   border-radius: 2px;
@@ -18,7 +37,6 @@
   justify-content: space-evenly;
   align-items: center;
 }
-
 
 .card-content {
   display: flex;
