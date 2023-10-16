@@ -20,18 +20,18 @@ const DropdownMenu = ({ list, setList }) => {
         Sort by
       </button>
       <div className="dropdown-menu" style={{ display: isOpen ? "block" : "none" }}>
-        <a className="dropdown-item" href="#" onClick={() => handleSort(sortByNameAsc)}>
+        <button className="dropdown-item"  onClick={() => handleSort(sortByNameAsc)}>
           Name (A-Z)
-        </a>
-        <a className="dropdown-item" href="#" onClick={() => handleSort(sortByNameDesc)}>
+        </button>
+        <button className="dropdown-item"  onClick={() => handleSort(sortByNameDesc)}>
           Name (Z-A)
-        </a>
-        <a className="dropdown-item" href="#" onClick={() => handleSort(sortByReleaseDateAsc)}>
+        </button>
+        <button className="dropdown-item"  onClick={() => handleSort(sortByReleaseDateAsc)}>
           Release date (new to old)
-        </a>
-        <a className="dropdown-item" href="#" onClick={() => handleSort(sortByReleaseDateDesc)}>
+        </button>
+        <button className="dropdown-item"  onClick={() => handleSort(sortByReleaseDateDesc)}>
           Release date (old to new)
-        </a>
+        </button>
       </div>
     </div>
   );
